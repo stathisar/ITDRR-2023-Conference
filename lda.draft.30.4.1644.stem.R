@@ -147,21 +147,3 @@ path = paste0("/home/stathis/Desktop/res/ref/data/results/lda/test/",unique(df.a
 write.csv(lda.summary, path)
 rm(lda.summary, k, i, plot.l, plot.p.path, dtm, df, model, s, Data_corpus, name, path, title.text)
 }
-
-
-assignments <- predict(model, dtm.2,
-                       method = "gibbs", 
-                       iterations = 200,
-                       burnin = 180,
-                       cpus = 4)
-
-# predictions with dot
-assignments_dot <- predict(model, dtm.2,
-                           method = "dot")
-
-
-# compare
-barplot(rbind(assignments[10,], assignments_dot[10,]),
-        col = c("red", "blue"), las = 2, beside = TRUE)
-legend("topright", legend = c("gibbs", "dot"), col = c("red", "blue"), 
-       fill = c("red", "blue"))
