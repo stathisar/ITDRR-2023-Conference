@@ -1,7 +1,7 @@
 # ITDRR-2023-Conference
 Material of the ITDRR-2023 presentation: Script approaches written in R and Python and figures etc.
 
-Currently there are only 3 scripts. 2 in R and 1 in python. The R scripts are related to 1. lda models and 2. to weighting the n-grams. The python script is a demo script: LER is applied and then stored in a csv.
+As of August 2025 there are only 4 scripts. 2 in R and 2 in python. The R scripts are related to 1. lda models and 2. to weighting the n-grams. The python scripts are related to LER. The first one for actual LER and the second one an approach for fine-tuning the LER model, used. The latter was not needed for reasons mentioned within the paper. It is placed in current repository though, as similar to the research.
 Please note that there is a know how on how the transformer could be fine-tuned. In case you are interested in that please contact me.
 The scripts might be updated and fully uploaded along with some demo data ASAP.
 
